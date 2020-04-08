@@ -30,13 +30,6 @@ public class BaseTest {
 		setHeaders();
 	}
 	
-	@Test
-	public void testAccessToken() {
-		
-		accessToken = rp.getToken();
-		assertNotNull(accessToken, "Access Token is null, please enter a valid Token");
-		
-	}
 	
 	public void setHeaders() {
 		

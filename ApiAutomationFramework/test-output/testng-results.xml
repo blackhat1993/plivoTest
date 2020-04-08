@@ -1,41 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-04T13:43:20Z" name="Default suite" finished-at="2020-04-04T13:43:25Z" duration-ms="4715">
+  <suite started-at="2020-04-08T09:41:55Z" name="Default suite" finished-at="2020-04-08T09:42:06Z" duration-ms="10891">
     <groups>
     </groups>
-    <test started-at="2020-04-04T13:43:20Z" name="Default test" finished-at="2020-04-04T13:43:25Z" duration-ms="4715">
+    <test started-at="2020-04-08T09:41:55Z" name="Default test" finished-at="2020-04-08T09:42:06Z" duration-ms="10891">
       <class name="channel.tests.PlivoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:20Z" name="setUp" finished-at="2020-04-04T13:43:20Z" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:41:55Z" name="setUp" finished-at="2020-04-08T09:41:55Z" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAccessToken()[pri:0, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:20Z" name="testAccessToken" finished-at="2020-04-04T13:43:20Z" duration-ms="7" status="PASS">
+        <test-method signature="testAccessToken()[pri:6, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:41:55Z" name="testAccessToken" finished-at="2020-04-08T09:41:55Z" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccessToken -->
-        <test-method signature="testCreateNewChannel()[pri:0, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:20Z" name="testCreateNewChannel" finished-at="2020-04-04T13:43:22Z" duration-ms="2356" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:41:55Z" name="setUp" finished-at="2020-04-08T09:41:55Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAccessToken()[pri:6, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:41:55Z" name="testAccessToken" finished-at="2020-04-08T09:41:55Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessToken -->
+        <test-method signature="testCreateNewChannel()[pri:5, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:41:55Z" name="testCreateNewChannel" finished-at="2020-04-08T09:42:00Z" depends-on-methods="channel.tests.PlivoTest.testAccessToken" duration-ms="4683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateNewChannel -->
-        <test-method signature="testJoinNewlyCreatedChannel()[pri:1, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:22Z" name="testJoinNewlyCreatedChannel" finished-at="2020-04-04T13:43:23Z" duration-ms="426" status="PASS">
+        <test-method signature="testCreateNewChannel()[pri:5, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:00Z" name="testCreateNewChannel" finished-at="2020-04-08T09:42:01Z" depends-on-methods="channel.tests.PlivoTest.testAccessToken" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateNewChannel -->
+        <test-method signature="testJoinNewlyCreatedChannel()[pri:4, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:42:01Z" name="testJoinNewlyCreatedChannel" finished-at="2020-04-08T09:42:02Z" depends-on-methods="channel.tests.PlivoTest.testCreateNewChannel" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJoinNewlyCreatedChannel -->
-        <test-method signature="testRenameChannel()[pri:2, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:23Z" name="testRenameChannel" finished-at="2020-04-04T13:43:23Z" duration-ms="513" status="PASS">
+        <test-method signature="testJoinNewlyCreatedChannel()[pri:4, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:02Z" name="testJoinNewlyCreatedChannel" finished-at="2020-04-08T09:42:02Z" depends-on-methods="channel.tests.PlivoTest.testCreateNewChannel" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJoinNewlyCreatedChannel -->
+        <test-method signature="testRenameChannel()[pri:3, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:42:02Z" name="testRenameChannel" finished-at="2020-04-08T09:42:03Z" depends-on-methods="channel.tests.PlivoTest.testJoinNewlyCreatedChannel" duration-ms="479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRenameChannel -->
-        <test-method signature="verifyRenamedChannel()[pri:3, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:23Z" name="verifyRenamedChannel" finished-at="2020-04-04T13:43:24Z" duration-ms="528" status="PASS">
+        <test-method signature="testRenameChannel()[pri:3, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:03Z" name="testRenameChannel" finished-at="2020-04-08T09:42:03Z" depends-on-methods="channel.tests.PlivoTest.testJoinNewlyCreatedChannel" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRenameChannel -->
+        <test-method signature="verifyRenamedChannel()[pri:2, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:42:03Z" name="verifyRenamedChannel" finished-at="2020-04-08T09:42:04Z" depends-on-methods="channel.tests.PlivoTest.testRenameChannel" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRenamedChannel -->
-        <test-method signature="testArchiveChannel()[pri:4, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:24Z" name="testArchiveChannel" finished-at="2020-04-04T13:43:24Z" duration-ms="410" status="PASS">
+        <test-method signature="verifyRenamedChannel()[pri:2, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:04Z" name="verifyRenamedChannel" finished-at="2020-04-08T09:42:04Z" depends-on-methods="channel.tests.PlivoTest.testRenameChannel" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRenamedChannel -->
+        <test-method signature="testArchiveChannel()[pri:1, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:42:04Z" name="testArchiveChannel" finished-at="2020-04-08T09:42:04Z" depends-on-methods="channel.tests.PlivoTest.verifyRenamedChannel" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testArchiveChannel -->
-        <test-method signature="verifyArchivedChannel()[pri:5, instance:channel.tests.PlivoTest@1e0b4072]" started-at="2020-04-04T13:43:24Z" name="verifyArchivedChannel" finished-at="2020-04-04T13:43:25Z" duration-ms="409" status="PASS">
+        <test-method signature="testArchiveChannel()[pri:1, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:04Z" name="testArchiveChannel" finished-at="2020-04-08T09:42:05Z" depends-on-methods="channel.tests.PlivoTest.verifyRenamedChannel" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testArchiveChannel -->
+        <test-method signature="verifyArchivedChannel()[pri:0, instance:channel.tests.PlivoTest@1ffaf86]" started-at="2020-04-08T09:42:05Z" name="verifyArchivedChannel" finished-at="2020-04-08T09:42:06Z" depends-on-methods="channel.tests.PlivoTest.testArchiveChannel" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyArchivedChannel -->
+        <test-method signature="verifyArchivedChannel()[pri:0, instance:channel.tests.PlivoTest@13e344d]" started-at="2020-04-08T09:42:06Z" name="verifyArchivedChannel" finished-at="2020-04-08T09:42:06Z" depends-on-methods="channel.tests.PlivoTest.testArchiveChannel" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyArchivedChannel -->

@@ -1,7 +1,8 @@
 package plivo.automation;
 
-import java.io.FileInputStream;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ReadProperty {
@@ -11,7 +12,8 @@ public class ReadProperty {
 	public ReadProperty() throws IOException {
 		
 		prop = new Properties();
-		FileInputStream ip = new FileInputStream("C:\\Users\\CHROME\\eclipse-workspace\\ApiAutomationFramework\\src\\test\\java\\plivo\\automation\\config.properties");
+		//InputStream ip = new InputStream("C:\\Users\\CHROME\\eclipse-workspace\\ApiAutomationFramework\\src\\test\\java\\plivo\\automation\\config.properties");
+		InputStream ip = this.getClass().getResourceAsStream("config.properties");
 		prop.load(ip);
 	}
 	

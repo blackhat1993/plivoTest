@@ -5,11 +5,14 @@
     <classes>
       <class name="channel.tests.PlivoTest">
         <methods>
-          <include name="verifyArchivedChannel"/>
           <include name="verifyRenamedChannel"/>
+          <include name="verifyArchivedChannel"/>
           <include name="testRenameChannel"/>
-          <include name="testArchiveChannel"/>
+          <include name="testAccessToken"/>
+          <include name="testArchiveChannel" invocation-numbers="1 2"/>
           <include name="setUp"/>
+          <include name="testCreateNewChannel"/>
+          <include name="testJoinNewlyCreatedChannel"/>
         </methods>
       </class> <!-- channel.tests.PlivoTest -->
     </classes>
